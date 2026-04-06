@@ -1,0 +1,126 @@
+:root{
+  --bg:#f6f4ef;
+  --paper:#ffffff;
+  --ink:#1f2937;
+  --muted:#5b6472;
+  --accent:#2f6f62;
+  --accent-soft:#e8f2ef;
+  --line:#dde5e3;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family: Georgia, "Times New Roman", serif;
+  color:var(--ink);
+  background:linear-gradient(180deg,#f8f7f3 0%,#f2efe8 100%);
+  line-height:1.65;
+}
+.site{
+  max-width:900px;
+  margin:0 auto;
+  padding:32px 20px 60px;
+}
+header.top{
+  margin-bottom:28px;
+}
+.kicker{
+  display:inline-block;
+  padding:6px 12px;
+  border-radius:999px;
+  background:var(--accent-soft);
+  color:var(--accent);
+  font:600 0.92rem/1.2 Arial, Helvetica, sans-serif;
+  letter-spacing:.02em;
+}
+.card{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(17,24,39,.05);
+  overflow:hidden;
+}
+.hero{
+  padding:34px 34px 24px;
+  border-bottom:1px solid var(--line);
+}
+.hero h1{
+  margin:10px 0 0;
+  font-size:2rem;
+  line-height:1.2;
+}
+.hero p{
+  margin:10px 0 0;
+  color:var(--muted);
+  max-width:65ch;
+}
+.content{
+  padding:12px 34px 34px;
+}
+section{
+  padding-top:24px;
+  border-top:1px solid #eef2f1;
+}
+section:first-child{
+  border-top:none;
+  padding-top:12px;
+}
+h2{
+  font-size:1.25rem;
+  margin:0 0 10px;
+  color:#173f37;
+}
+p{margin:0 0 12px}
+ul{
+  margin:8px 0 14px 0;
+  padding-left:22px;
+}
+li{margin:6px 0}
+.term-list{
+  list-style:none;
+  padding-left:0;
+}
+.term-list li{
+  padding:10px 12px;
+  margin:8px 0;
+  background:#fafbf9;
+  border:1px solid #edf1ef;
+  border-radius:10px;
+}
+.note{
+  background:#faf7ef;
+  border:1px solid #eee2c9;
+  border-radius:12px;
+  padding:14px 16px;
+  margin-top:6px;
+}
+footer.page{
+  margin-top:22px;
+  color:var(--muted);
+  font-size:.95rem;
+}
+.index-list{
+  display:grid;
+  gap:12px;
+  margin-top:18px;
+}
+.index-list a{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:16px 18px;
+  box-shadow:0 6px 18px rgba(17,24,39,.04);
+}
+.index-list a:hover{
+  border-color:#c7d7d3;
+  transform:translateY(-1px);
+}
+.small{font-size:.95rem;color:var(--muted)}
+@media (max-width:700px){
+  .site{padding:18px 14px 44px}
+  .hero,.content{padding-left:18px;padding-right:18px}
+  .hero h1{font-size:1.6rem}
+}
